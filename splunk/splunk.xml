@@ -1,30 +1,3 @@
-Feedback
-unRAID Server Basic Server
-Description
-Version
-UptimeTower • 192.168.1.10
-Media server
-6.5.1
-29 days, 1 hour, 24 minutes
-Dashboard
-Main
-Shares
-Users
-Settings
-Plugins
-Docker
-VMs
-Apps
-Stats
-Tools
-87%
-Terminal
-Feedback
-Help
-Info
-Log
-Update Container
-XML
 <?xml version="1.0"?>
 <Container version="2">
   <Name>splunk</Name>
@@ -135,8 +108,3 @@ XML
   <Config Name="Docker Logs 2" Target="/dockerlogs2" Default="" Mode="ro" Description="Container Path: /dockerlogs2" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata</Config>
   <Config Name="Docker Logs" Target="/dockervarlib" Default="/var/lib/docker" Mode="ro" Description="Container Path: /dockervarlib" Type="Path" Display="advanced" Required="false" Mask="false">/var/lib/docker</Config>
 </Container>
-COMMAND:
-/usr/local/emhttp/plugins/dynamix.docker.manager/scripts/docker create --name='splunk' --net='bridge' -e TZ="America/New_York" -e HOST_OS="unRAID" -p '9000:8000/tcp' -p '8089:8089/tcp' -p '9997:9997/tcp' -p '514:514/udp' -p '8088:8088/tcp' -v '/mnt/user/appdata/splunk':'/opt/splunk/var':'rw' -v '/var/log':'/data':'ro' -v '/mnt/user/appdata/splunk/':'/license':'ro' -v '/mnt/user/Docker/appdata':'/dockerlogs':'ro' -v '/mnt/user/appdata':'/dockerlogs2':'ro' -v '/var/lib/docker':'/dockervarlib':'ro' 'zyphermonkey/splunk' 
-BackDone
-
- Array StartedunRAID® webGui ©2018, Lime Technology, Inc.  manual
