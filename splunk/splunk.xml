@@ -102,7 +102,7 @@
   <Config Name="Host Port 4" Target="514" Default="514" Mode="udp" Description="Container Port: 514&#13;&#10;syslog -&amp;gt; Indexer" Type="Port" Display="always" Required="true" Mask="false">514</Config>
   <Config Name="Host Port 5" Target="8088" Default="8088" Mode="tcp" Description="Container Port: 8088 -&amp;gt;HTTP Event Collector" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
   <Config Name="Host Path 1" Target="/opt/splunk/var" Default="/mnt/user/appdata/splunk/var" Mode="rw" Description="Container Path: /opt/splunk/var" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/splunk/var</Config>
-  <Config Name="Host Path 1" Target="/opt/splunk/etc" Default="/mnt/user/appdata/splunk/etc" Mode="rw" Description="Container Path: /opt/splunk/etc" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/splunk/etc</Config>
+  <Config Name="Host Path 2" Target="/opt/splunk/etc" Default="/mnt/user/appdata/splunk/etc" Mode="rw" Description="Container Path: /opt/splunk/etc" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/splunk/etc</Config>
   <Config Name="Data" Target="/data" Default="/var/log" Mode="ro" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/var/log</Config>
   <Config Name="License" Target="/license" Default="" Mode="ro" Description="Container Path: /license" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/splunk/</Config>
   <Config Name="Docker Logs" Target="/dockervarlib" Default="/var/lib/docker" Mode="ro" Description="Container Path: /dockervarlib" Type="Path" Display="advanced" Required="false" Mask="false">/var/lib/docker</Config>
